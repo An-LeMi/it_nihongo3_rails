@@ -5,3 +5,8 @@
 <%= @user.email %>
 <br>
 <%= @user.age %>
+<p>
+  <% if @user.avatar.attached? %>
+    <%= image_tag @user.avatar %>
+  <% end %>
+</p>
